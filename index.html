@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FFO - Fitness For One</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <div role="region" aria-label="Notifications (F8)" tabindex="-1" class="notifications-area">
+            <ol tabindex="-1" class="toast-viewport"></ol>
+        </div>
+
+        <div class="main-content-wrapper">
+            <nav class="main-navigation">
+                <div class="container nav-container">
+                    <div class="nav-header">
+                        <div class="logo">
+                            <span class="logo-ffo">FFO</span>
+                        </div>
+                        <div class="nav-links-desktop">
+                            <a href="#hero" class="nav-link">Inicio</a>
+                            <a href="#services" class="nav-link">Servicios</a>
+                            <a href="#pricing" class="nav-link">Planes</a>
+                            <a href="#gallery" class="nav-link">Galería</a>
+                            <a href="#benefits" class="nav-link">Beneficios</a>
+                            <a href="#contact" class="nav-link">Contacto</a>
+                            <button type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-:r0:" data-state="closed" class="nav-button">Sobre Nosotros</button>
+                        </div>
+                        <div class="contact-button-desktop">
+                            <a href="https://wa.me/506" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-message-circle">
+                                    <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
+                                </svg>
+                                Contáctanos
+                            </a>
+                        </div>
+                        <div class="mobile-menu-toggle">
+                            <button id="mobile-menu-btn" class="menu-toggle-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-menu menu-icon">
+                                    <line x1="4" x2="20" y1="12" y2="12"></line>
+                                    <line x1="4" x2="20" y1="6" y2="6"></line>
+                                    <line x1="4" x2="20" y1="18" y2="18"></line>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-menu close-icon hidden">
+                                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div id="mobile-nav" class="mobile-nav-links hidden">
+                <a href="#hero" class="nav-link-mobile">Inicio</a>
+                <a href="#services" class="nav-link-mobile">Servicios</a>
+                <a href="#pricing" class="nav-link-mobile">Planes</a>
+                <a href="#gallery" class="nav-link-mobile">Galería</a>
+                <a href="#benefits" class="nav-link-mobile">Beneficios</a>
+                <a href="#contact" class="nav-link-mobile">Contacto</a>
+                <button type="button" class="nav-button-mobile">Sobre Nosotros</button>
+                <a href="https://wa.me/506" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-mobile">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-message-circle">
+                        <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
+                    </svg>
+                    Contáctanos
+                </a>
+            </div>
+
+            <section id="hero" class="hero-section">
+                <div class="hero-background">
+                    <img src="/assets/hero-gym.jpg" alt="Fitness For One Gym" class="hero-image" />
+                    <div class="hero-overlay"></div>
+                </div>
+                <div class="hero-shape shape-top-left">
+                    <div class="shape-circle"></div>
+                </div>
+                <div class="hero-shape shape-bottom-right">
+                    <div class="shape-square"></div>
+                </div>
+                <div class="hero-content container">
+                    <div class="hero-text-content">
+                        <h1 class="hero-title">Transforma tu <span class="text-green">CUERPO</span><br />Transforma tu <span class="text-green">VIDA</span></h1>
+                        <p class="hero-description">Entrenamientos personalizados, fisioterapia y nutrición en un solo lugar. Descubre el método FFO que te llevará a tus mejores resultados.</p>
+                    </div>
+                    <div class="hero-schedule-card">
+                        <h3 class="schedule-title">Nuestros Horarios</h3>
+                        <div class="schedule-details">
+                            <div class="schedule-item">
+                                <span class="schedule-day">LUNES A VIERNES</span>
+                                <span class="schedule-time">5:00 AM - 9:30 PM</span>
+                            </div>
+                            <div class="schedule-item">
+                                <span class="schedule-day">SÁBADOS</span>
+                                <span class="schedule-time">7:00 AM - 3:30 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-actions">
+                        <a href="https://wa.me/506" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-message-circle">
+                                <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
+                            </svg>
+                            Reserva tu Prueba Gratuita
+                        </a>
+                        <a href="#services" class="btn btn-secondary btn-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-play">
+                                <polygon points="6 3 20 12 6 21 6 3"></polygon>
+                            </svg>
+                            Conoce Nuestros Servicios
+                        </a>
+                    </div>
+                    <div class="hero-features-grid">
+                        <div class="feature-card">
+                            <h4 class="feature-title">Entrenamiento Semi-Personalizado</h4>
+                            <p class="feature-description">Grupos pequeños, atención personalizada</p>
+                        </div>
+                        <div class="feature-card">
+                            <h4 class="feature-title">Fisioterapia Profesional</h4>
+                            <p class="feature-description">Rehabilitación y prevención de lesiones</p>
+                        </div>
+                        <div class="feature-card">
+                            <h4 class="feature-title">Asesoría Nutricional</h4>
+                            <p class="feature-description">Planes alimentarios personalizados</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="services" class="services-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">Nuestros <span class="text-green">Servicios</span></h2>
+                        <p class="section-description">Descubre la variedad de servicios diseñados para ayudarte a alcanzar tus objetivos de fitness y salud</p>
+                    </div>
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <div class="badge popular-badge">POPULAR</div>
+                            <div class="service-image-wrapper">
+                                <img src="/assets/personal-training.jpg" alt="Entrenamiento Semi-Personalizado" class="service-image" />
+                                <div class="service-image-overlay"></div>
+                            </div>
+                            <div class="card-header">
+                                <div class="service-icon-title">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="service-icon">
+                                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="9" cy="7" r="4"></circle>
+                                        <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                    </svg>
+                                    <h3 class="card-title">Entrenamiento Semi-Personalizado</h3>
+                                </div>
+                                <p class="card-description">Grupos pequeños con atención personalizada. Disfruta de la motivación grupal sin perder el enfoque individual.</p>
+                            </div>
+                            <div class="card-content">
+                                <ul class="service-features-list">
+                                    <li class="service-feature-item">
+                                        <div class="bullet-point"></div>Máximo 4 personas por sesión
+                                    </li>
+                                    <li class="service-feature-item">
+                                        <div class="bullet-point"></div>Rutinas adaptadas a cada nivel
+                                    </li>
+                                    <li class="service-feature-item">
+                                        <div class="bullet-point"></div>Seguimiento personalizado
+                                    </li>
+                                </ul>
+                                <a href="https://wa.me/506" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Más Información</a>
+                            </div>
+                        </div>
+
+                        <div class="service-card">
+                            <div class="service-image-wrapper">
+                                <img src="/assets/personal-training.jpg" alt="Entrenamiento Personalizado" class="service-image" />
+                                <div class="service-image-overlay"></div>
+                            </div>
+                            <div class="card-header">
+                                <div class="service-icon-title">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="service-icon">
+                                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="9" cy="7" r="4"></circle>
+                                        <polyline points="16 11 18 13 22 9"></polyline>
+                                    </svg>
+                                    <h3 class="card-title">Entrenamiento Personalizado</h3>
+                                </div>
+                                <p class="card-description">Sesiones 1:1 completamente adaptadas a tus objetivos, limitaciones y preferencias.</p>
+                            </div>
+                            <div class="card-content">
+                                <ul class="service-features-list">
+                                    <li class="service-feature-item">
+                                        <div class="bullet-point"></div>Atención exclusiva
+                                    </li>
+                                    <li class="service-feature-item">
+                                        <div class="bullet-point"></div>Plan 100% personalizado
+                                    </li>
+                                    <li class="service-feature-item">
+                                        <div class="bullet-point"></div>Flexibilidad total de horarios
+                                    </li>
+                                </ul>
+                                <a href="https://wa.me/506" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Más Información</a>
+                            </div>
+                        </div>
+
+                        <div class="service-card">
+                            <div class="service-image-wrapper">
+                                <img src="/assets/physical-therapy.jpg" alt="Fisioterapia" class="service-image" />
+                                <div class="service-image-overlay"></div>
+                            </div>
+                            <div class="card-header">
+                                <div class="service-icon-title">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="service-icon">
+                                        <path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"></path>
+                                    </svg>
+                                    <h3 class="card-title">Fisioterapia</h3>
+                                </div>
+                                <p class="card-description">Rehabilitación profesional y prevención de lesiones con tecnología de vanguardia.</p>
+                            </div>
+                            <div class="card-content">
+                                <ul class="service-features-list">
+                                    <li class="service-feature-item">
+                                        <div class="bullet-point"></div>Evaluación integral
+                                    </li>
+                                    <li class="service-feature-item">
+                                        <div class="bullet-point"></div>Tratamiento especializado
+                                    </li>
+                                    <li class="service-feature-item">
+                                        <div class="bullet-point"></div>Prevención de lesiones
+                                    </li>
+                                </ul>
+                                <a href="https://wa.me/506" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Más Información</a>
+                            </div>
+                        </div>
+
+                        <div class="service-card">
+                            <div class="service-image-wrapper">
+                                <img src="/assets/personal-training.jpg" alt="Entrenamiento Funcional" class="service-image" />
+                                <div class="service-image-overlay"></div>
+                            </div>
+                            <div class="card-header">
+                                <div class="service-icon-title">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="service-icon">
+                                        <path d="M14.4 14.4 9.6 9.6"></path>
+                                        <path d="M18.657 21.485a2 2 0 1 1-2.829-2.828l-1.767 1.768a2 2 0 1 1-2.829-2.829l6.364-6.364a2 2 0 1 1 2.829 2.829l-1.768 1.767a2 2 0 1 1 2.828 2.829z"></path>
+                                        <path d="m21.5 21.5-1.4-1.4"></path>
+                                        <path d="M3.9 3.9 2.5 2.5"></path>
+                                        <path d="M6.404 12.768a2 2 0 1 1-2.829-2.829l1.768-1.767a2 2 0 1 1-2.828-2.829l2.828-2.828a2 2 0 1 1 2.829 2.828l1.767-1.768a2 2 0 1 1 2.829 2.829z"></path>
+                                    </svg>
+                                    <h3 class="card-title">Entrenamiento Funcional</h3>
+                                </div>
+                                <p class="card-description">Ejercicios que mejoran tu rendimiento en actividades diarias y deportivas.</p>
+                            </div>
+                            <div class="card-content">
+                                <ul class="service-features-list">
+                                    <li class="service-feature-item">
+                                        <div class="bullet-point"></div>Movimientos naturales
+                                    </li>
+                                    <li class="service-feature-item">
+                                        <div class="bullet-point"></div>Mejora del rendimiento
+                                    </li>
+                                    <li class="service-feature-item">
+                                        <div class="bullet-point"></div>Fortalecimiento integral
+                                    </li>
+                                </ul>
+                                <a href="https://wa.me/506" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Más Información</a>
+                            </div>
+                        </div>
+
+                        <div class="service-card">
+                            <div class="service-image-wrapper">
+                                <img src="/assets/nutrition.jpg" alt="Asesoría Nutricional" class="service-image" />
+                                <div class="service-image-overlay"></div>
+                            </div>
+                            <div class="card-header">
+                                <div class="service-icon-title">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="service-icon">
+                                        <path d="M12 20.94c1.5 0 2.75 1.06 4 1.06 3 0 6-8 6-12.22A4.91 4.91 0 0 0 17 5c-2.22 0-4 1.44-5 2-1-.56-2.78-2-5-2a4.9 4.9 0 0 0-5 4.78C2 14 5 22 8 22c1.25 0 2.5-1.06 4-1.06Z"></path>
+                                        <path d="M10 2c1 .5 2 2 2 5"></path>
+                                    </svg>
+                                    <h3 class="card-title">Asesoría Nutricional</h3>
+                                </div>
+                                <p class="card-description">Planes alimentarios personalizados que complementan tu entrenamiento para resultados óptimos.</p>
+                            </div>
+                            <div class="card-content">
+                                <ul class="service-features-list">
+                                    <li class="service-feature-item">
+                                        <div class="bullet-point"></div>Evaluación nutricional
+                                    </li>
+                                    <li class="service-feature-item">
+                                        <div class="bullet-point"></div>Planes personalizados
+                                    </li>
+                                    <li class="service-feature-item">
+                                        <div class="bullet-point"></div>Seguimiento continuo
+                                    </li>
+                                </ul>
+                                <a href="https://wa.me/506" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Más Información</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="training-packages-section">
+                        <div class="section-header">
+                            <h3 class="section-title">Paquetes de <span class="text-green">Entrenamiento</span></h3>
+                            <p class="section-description">Elige el plan que mejor se adapte a tus necesidades y objetivos</p>
+                        </div>
+                        <div class="packages-grid">
+                            <div class="package-card package-card-highlight">
+                                <div class="card-header">
+                                    <h3 class="card-title">Semipersonalizado Toda la Semana</h3>
+                                </div>
+                                <div class="card-content">
+                                    <a href="https://wa.me/506" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Consultar</a>
+                                </div>
+                            </div>
+                            <div class="package-card">
+                                <div class="card-header">
+                                    <h3 class="card-title">Semipersonalizado 3 Veces a la Semana</h3>
+                                </div>
+                                <div class="card-content">
+                                    <a href="https://wa.me/506" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Consultar</a>
+                                </div>
+                            </div>
+                            <div class="package-card package-card-highlight">
+                                <div class="card-header">
+                                    <h3 class="card-title">Paquete de Parejas</h3>
+                                </div>
+                                <div class="card-content">
+                                    <a href="https://wa.me/506" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Consultar</a>
+                                </div>
+                            </div>
+                            <div class="package-card">
+                                <div class="card-header">
+                                    <h3 class="card-title">Semipersonalizado Familiar (3 o +)</h3>
+                                </div>
+                                <div class="card-content">
+                                    <a href="https://wa.me/506" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Consultar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="pricing" class="pricing-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">Planes y <span class="text-green">Precios</span></h2>
+                        <p class="section-description">Elige el plan que mejor se adapte a tus objetivos y estilo de vida. Todos incluyen acceso completo a nuestras instalaciones.</p>
+                    </div>
+                    <div class="pricing-grid">
+                        <div class="pricing-card">
+                            <div class="card-header">
+                                <h3 class="card-title">Pase Diario</h3>
+                                <div class="price-details">
+                                    <div class="price">₡2,500</div>
+                                    <p class="price-description">por día</p>
+                                </div>
+                                <p class="plan-tagline">Perfecto para probar nuestras instalaciones</p>
+                            </div>
+                            <div class="card-content">
+                                <ul class="plan-features-list">
+                                    <li class="plan-feature-item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-check">
+                                            <path d="M20 6 9 17l-5-5"></path>
+                                        </svg>
+                                        <span class="feature-text">Acceso completo al gimnasio</span>
+                                    </li>
+                                    <li class="plan-feature-item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-check">
+                                            <path d="M20 6 9 17l-5-5"></path>
+                                        </svg>
+                                        <span class="feature-text">Uso de todas las máquinas</span>
+                                    </li>
+                                    <li class="plan-feature-item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-check">
+                                            <path d="M20 6 9 17l-5-5"></path>
+                                        </svg>
+                                        <span class="feature-text">Área de peso libre</span>
+                                    </li>
+                                    <li class="plan-feature-item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-check">
+                                            <path d="M20 6 9 17l-5-5"></path>
+                                        </svg>
+                                        <span class="feature-text">Asesoría básica incluida</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <a href="https://wa.me/506" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-lg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-message-circle icon-margin-right">
+                                        <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
+                                    </svg>
+                                    Comprar Pase
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="pricing-card pricing-card-recommended">
+                            <div class="badge recommended-badge">Recomendado</div>
+                            <div class="card-header">
+                                <h3 class="card-title">Plan Quincenal</h3>
+                                <div class="price-details">
+                                    <div class="price">₡18,000</div>
+                                    <p class="price-description">por 15 días</p>
+                                </div>
+                                <p class="plan-tagline">Ideal para rutinas cortas y específicas</p>
+                            </div>
+                            <div class="card-content">
+                                <ul class="plan-features-list">
+                                    <li class="plan-feature-item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-check">
+                                            <path d="M20 6 9 17l-5-5"></path>
+                                        </svg>
+                                        <span class="feature-text">Todo lo del pase diario</span>
+                                    </li>
+                                    <li class="plan-feature-item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-check">
+                                            <path d="M20 6 9 17l-5-5"></path>
+                                        </svg>
+                                        <span class="feature-text">Rutina personalizada básica</span>
+                                    </li>
+                                    <li class="plan-feature-item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-check">
+                                            <path d="M20 6 9 17l-5-5"></path>
+                                        </svg>
+                                        <span class="feature-text">Seguimiento quincenal</span>
+                                    </li>
+                                    <li class="plan-feature-item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-check">
+                                            <path d="M20 6 9 17l-5-5"></path>
+                                        </svg>
+                                        <span class="feature-text">Descuento en servicios adicionales</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <a href="https://wa.me/506" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-message-circle icon-margin-right">
+                                        <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
+                                    </svg>
+                                    ¡Inscríbete Ahora!
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="pricing-card">
+                            <div class="card-header">
+                                <h3 class="card-title">Plan Mensual</h3>
+                                <div class="price-details">
+                                    <div class="price">₡25,000</div>
+                                    <p class="price-description">por mes</p>
+                                </div>
+                                <p class="plan-tagline">La mejor opción para resultados consistentes</p>
+                            </div>
+                            <div class="card-content">
+                                <ul class="plan-features-list">
+                                    <li class="plan-feature-item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-check">
+                                            <path d="M20 6 9 17l-5-5"></path>
+                                        </svg>
+                                        <span class="feature-text">Todo lo del plan quincenal</span>
+                                    </li>
+                                    <li class="plan-feature-item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-check">
+                                            <path d="M20 6 9 17l-5-5"></path>
+                                        </svg>
+                                        <span class="feature-text">Evaluación física completa</span>
+                                    </li>
+                                    <li class="plan-feature-item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-check">
+                                            <path d="M20 6 9 17l-5-5"></path>
+                                        </svg>
+                                        <span class="feature-text">Plan nutricional básico</span>
+                                    </li>
+                                    <li class="plan-feature-item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-check">
+                                            <path d="M20 6 9 17l-5-5"></path>
+                                        </svg>
+                                        <span class="feature-text">Clases grupales incluidas</span>
+                                    </li>
+                                    <li class="plan-feature-item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-check">
+                                            <path d="M20 6 9 17l-5-5"></path>
+                                        </svg>
+                                        <span class="feature-text">Acceso prioritario a equipos</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <a href="https://wa.me/506" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-lg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-message-circle icon-margin-right">
+                                        <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
+                                    </svg>
+                                    ¡Empieza Hoy!
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pricing-contact-info">
+                        <p class="contact-text">¿Necesitas un plan personalizado? Contáctanos para opciones especiales.</p>
+                        <a href="https://wa.me/506" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-message-circle icon-margin-right">
+                                <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
+                            </svg>
+                            Consulta Personalizada
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="gallery" class="gallery-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">Galería del <span class="text-green">Gimnasio</span></h2>
+                        <p class="section-description">Conoce nuestras instalaciones, equipos de última generación y el ambiente que te motivará a alcanzar tus objetivos.</p>
+                    </div>
+                    <div class="gallery-grid">
+                        <div class="gallery-item" data-index="0">
+                            <img src="assets/placeholder.svg" alt="Área de cardio moderna con equipos de última generación" class="gallery-image" />
+                            <div class="gallery-overlay">
+                                <div class="gallery-text-content">
+                                    <h3 class="gallery-item-title">Área de Cardio</h3>
+                                </div>
+                            </div>
+                            <div class="gallery-border"></div>
+                        </div>
+                        <div class="gallery-item" data-index="1">
+                            <img src="assets/placeholder.svg" alt="Zona de peso libre completamente equipada" class="gallery-image" />
+                            <div class="gallery-overlay">
+                                <div class="gallery-text-content">
+                                    <h3 class="gallery-item-title">Zona de Peso Libre</h3>
+                                </div>
+                            </div>
+                            <div class="gallery-border"></div>
+                        </div>
+                        <div class="gallery-item" data-index="2">
+                            <img src="assets/placeholder.svg" alt="Sala de entrenamiento funcional espaciosa" class="gallery-image" />
+                            <div class="gallery-overlay">
+                                <div class="gallery-text-content">
+                                    <h3 class="gallery-item-title">Entrenamiento Funcional</h3>
+                                </div>
+                            </div>
+                            <div class="gallery-border"></div>
+                        </div>
+                        <div class="gallery-item" data-index="3">
+                            <img src="assets/placeholder.svg" alt="Área de fisioterapia y rehabilitación" class="gallery-image" />
+                            <div class="gallery-overlay">
+                                <div class="gallery-text-content">
+                                    <h3 class="gallery-item-title">Área de Fisioterapia</h3>
+                                </div>
+                            </div>
+                            <div class="gallery-border"></div>
+                        </div>
+                        <div class="gallery-item" data-index="4">
+                            <img src="assets/placeholder.svg" alt="Nuestro equipo de entrenadores profesionales" class="gallery-image" />
+                            <div class="gallery-overlay">
+                                <div class="gallery-text-content">
+                                    <h3 class="gallery-item-title">Equipo de Entrenadores</h3>
+                                </div>
+                            </div>
+                            <div class="gallery-border"></div>
+                        </div>
+                        <div class="gallery-item" data-index="5">
+                            <img src="assets/placeholder.svg" alt="Vista general de nuestras instalaciones" class="gallery-image" />
+                            <div class="gallery-overlay">
+                                <div class="gallery-text-content">
+                                    <h3 class="gallery-item-title">Instalaciones Generales</h3>
+                                </div>
+                            </div>
+                            <div class="gallery-border"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="benefits" class="benefits-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">4 razones por las que nuestro <span class="text-green">MÉTODO</span> te hará ver cambios reales</h2>
+                        <p class="section-description">Descubre por qué FFO es la elección inteligente para tu transformación física</p>
+                    </div>
+                    <div class="benefits-grid">
+                        <div class="benefit-card">
+                            <div class="card-header">
+                                <div class="benefit-icon-wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="benefit-icon">
+                                        <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+                                    </svg>
+                                </div>
+                                <h3 class="card-title">Menos Lesiones</h3>
+                            </div>
+                            <div class="card-content">
+                                <p class="card-description">Nuestro método de entrenamiento progresivo y supervisión profesional reduce significativamente el riesgo de lesiones.</p>
+                                <div class="highlight-box">
+                                    <p class="highlight-text">85% menos lesiones reportadas</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="benefit-card">
+                            <div class="card-header">
+                                <div class="benefit-icon-wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="benefit-icon">
+                                        <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+                                    </svg>
+                                </div>
+                                <h3 class="card-title">Más Seguridad</h3>
+                            </div>
+                            <div class="card-content">
+                                <p class="card-description">Entrenadores certificados y equipos de última generación garantizan un ambiente seguro para tu desarrollo.</p>
+                                <div class="highlight-box">
+                                    <p class="highlight-text">100% supervisión profesional</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="benefit-card">
+                            <div class="card-header">
+                                <div class="benefit-icon-wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="benefit-icon">
+                                        <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                                        <polyline points="16 7 22 7 22 13"></polyline>
+                                    </svg>
+                                </div>
+                                <h3 class="card-title">Progreso Medible</h3>
+                            </div>
+                            <div class="card-content">
+                                <p class="card-description">Sistema de seguimiento detallado que te permite ver tu evolución semana a semana con métricas claras.</p>
+                                <div class="highlight-box">
+                                    <p class="highlight-text">Evaluaciones cada 2 semanas</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="benefit-card">
+                            <div class="card-header">
+                                <div class="benefit-icon-wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="benefit-icon">
+                                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="9" cy="7" r="4"></circle>
+                                        <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                    </svg>
+                                </div>
+                                <h3 class="card-title">Acompañamiento Constante</h3>
+                            </div>
+                            <div class="card-content">
+                                <p class="card-description">No entrenas solo. Nuestro equipo te acompaña en cada paso de tu transformación física y mental.</p>
+                                <div class="highlight-box">
+                                    <p class="highlight-text">Soporte 6 días a la semana</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cta-banner">
+                        <div class="cta-content">
+                            <h3 class="cta-title">¿Listo para experimentar la diferencia FFO?</h3>
+                            <p class="cta-description">Únete a los cientos de personas que ya han transformado su vida con nuestro método. Tu primera sesión es completamente gratuita.</p>
+                            <div class="cta-actions">
+                                <a href="https://wa.me/506" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">Reservar Sesión Gratuita</a>
+                                <a href="https://wa.me/506" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-lg">Consultar Precios</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="main-footer">
+                <div class="container footer-container">
+                    <div class="footer-top-grid">
+                        <div class="footer-brand-info">
+                            <div class="footer-logo">FFO</div>
+                            <p class="footer-description">Fitness For One - Tu gimnasio de confianza para una transformación integral. Entrenamiento, fisioterapia y nutrición en un solo lugar.</p>
+                            <div class="social-links">
+                                <a href="https://www.instagram.com/username" target="_blank" rel="noopener noreferrer" class="social-icon-wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-icon">
+                                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                                    </svg>
+                                </a>
+                                <a href="https://www.facebook.com/FitnessForOne" target="_blank" rel="noopener noreferrer" class="social-icon-wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-icon">
+                                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="footer-links-column">
+                            <h4 class="footer-heading">Servicios</h4>
+                            <ul class="footer-list">
+                                <li>Entrenamiento Semi-Personalizado</li>
+                                <li>Entrenamiento Personalizado</li>
+                                <li>Fisioterapia</li>
+                                <li>Entrenamiento Funcional</li>
+                                <li>Asesoría Nutricional</li>
+                            </ul>
+                        </div>
+                        <div class="footer-links-column">
+                            <h4 class="footer-heading">Horarios</h4>
+                            <div class="schedule-info">
+                                <div class="schedule-icon-text">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-clock">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <polyline points="12 6 12 12 16 14"></polyline>
+                                    </svg>
+                                    <div>
+                                        <div class="schedule-day-time">Lun - Vie: 5:00 AM - 9:30 PM</div>
+                                        <div class="schedule-day-time">Sáb: 7:00 AM - 3:30 PM</div>
+                                        <div class="schedule-day-time">Dom: Cerrado</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-links-column">
+                            <h4 class="footer-heading">Contacto</h4>
+                            <div class="contact-info">
+                                <div class="contact-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-map-pin">
+                                        <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                    <span class="contact-text">Costa Rica</span>
+                                </div>
+                                <div class="whatsapp-buttons">
+                                    <a href="https://wa.me/506" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-message-circle">
+                                            <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
+                                        </svg>
+                                        WhatsApp Principal
+                                    </a>
+                                    <a href="https://wa.me/506" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-message-circle">
+                                            <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
+                                        </svg>
+                                        WhatsApp Secundario
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-location-section">
+                        <div class="location-info">
+                            <h3 class="location-heading">Visítanos</h3>
+                            <p class="location-description">Encuentra FFO en el corazón de Costa Rica. Ven y conoce nuestras instalaciones, nuestro equipo estará encantado de mostrarte todo lo que tenemos para ofrecerte.</p>
+                            <div class="location-actions">
+                                <a href="https://wa.me/506" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-outline">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-message-circle">
+                                        <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
+                                    </svg>
+                                    Reserva Tu Sesión Gratuita
+                                </a>
+                            </div>
+                        </div>
+                        <div class="map-container">
+                            <div class="map-embed-wrapper">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.0454734274954!2d-84.08395668469783!3d9.935569292803394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0e342c50b2f7d%3A0x5c6e3f7b4c8a5c7e!2sSan%20Jos%C3%A9%2C%20Costa%20Rica!5e0!3m2!1sen!2sus!4v1637000000000!5m2!1sen!2sus" width="100%" height="100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ubicación de Fitness For One" class="map-iframe"></iframe>
+                            </div>
+                            <div class="map-label">📍 FFO Gimnasio</div>
+                        </div>
+                    </div>
+
+                    <div class="footer-bottom">
+                        <div class="copyright">© 2024 Fitness For One (FFO). Todos los derechos reservados.</div>
+                        <div class="footer-legal-links">
+                            <a href="#" class="legal-link">Política de Privacidad</a>
+                            <a href="#" class="legal-link">Términos de Servicio</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
