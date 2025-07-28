@@ -250,7 +250,7 @@ img {
 .btn-whatsapp {
     color: var(--color-dark-bg);
     background-color: transparent;
-    border: 0.714286px solid rgba(18, 18, 18, 0.3);
+    border: 1px solid rgb(0, 0, 0) !important;
 }
 
 .btn-whatsapp:hover {
