@@ -1271,10 +1271,10 @@ img {
     color: var(--color-dark-bg);
     background-color: var(--color-green);
     padding-top: 64px;
-    padding-bottom: 64px;
+    padding-bottom: 20px;
 }
 
-.footer-container {
+.footer-container { 
     padding-left: 16px; /* Adjusted for mobile */
     padding-right: 16px; /* Adjusted for mobile */
 }
